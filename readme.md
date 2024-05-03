@@ -14,6 +14,8 @@ See the [example](./example) (deployed [here](https://remotion-sst.asius.ai/)), 
 
 ```ts
 // sst.config.ts
+import { RemotionLambda } from "remotion-sst";
+
 const remotion = new RemotionLambda("Remotion", {
   path: "packages/remotion",
 });
@@ -26,6 +28,7 @@ new sst.aws.Astro("Client", {
 ```ts
 // render.ts
 import { Resource } from "sst";
+import { renderMediaOnLambda } from "@remotion/lambda/client";
 
 const res = await renderMediaOnLambda({
   functionName: Resource.Remotion.functionName,
