@@ -1,6 +1,6 @@
 {
   "name": "remotion-sst",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "main": "src/index.ts",
   "workspaces": [
     "example"
